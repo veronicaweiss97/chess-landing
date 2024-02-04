@@ -1,0 +1,30 @@
+.button {
+    border: none;
+    border-radius: 66px;
+    width: 263px;
+    height: 72px;
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button-primary {
+    background-color: var(--secondary-dark);
+    color: var(--main-white);
+
+    &:hover {
+        background-color: var(--main-yellow);
+        color: var(--secondary-dark);
+    }
+}
+
+.button-secondary {
+    border: 1px solid var(--secondary-dark);
+    background: transparent;
+
+    &:hover {
+        background-color: var(--secondary-dark);
+        color: var(--main-white);
+    }
+}

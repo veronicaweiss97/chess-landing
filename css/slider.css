@@ -1,0 +1,106 @@
+.slider {
+    position: static;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    font-family: var(--secondary-font);
+    margin-top: 60px;
+}
+
+.slides-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 33.33%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide button {
+    color: var(--main-blue);
+    border-radius: 62px;
+    border: 1px solid var(--main-blue);
+    font-size: var(--main-font-size-xxs);
+    background-color: transparent;
+    padding: 12px;
+    margin-top: 20px;
+    font-weight: var(--font-weight-regular);
+    &:hover {
+        color: var(--main-white);
+        background-color: var(--main-blue);
+    }
+}
+
+.slide h3 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--main-font-size-m);
+    margin: 0;
+    margin-bottom: 6px;
+    margin-top: 28px;
+}
+
+.slide p {
+    font-size: var(--secondary-font-size-m);
+    opacity: 50%;
+    margin: 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--main-font-size-xxs);
+}
+
+.controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--main-dark);
+    color: var(--main-white);
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--main-yellow);
+    }
+
+    &:disabled {
+        background-color: var(--secondary-grey);
+        cursor: not-allowed;
+    }
+
+    .arrow {
+        border: solid var(--main-white);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 6px;
+    }
+
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+}
+
+.controls span {
+    opacity: 50%;
+    margin-left: 16px;
+    margin-right: 16px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,600;1,100&family=Ysabeau+Infant:wght@1&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,600;1,100&family=Ysabeau+Infant:wght@1&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/slider.css" />
+        <link rel="stylesheet" href="./css/table.css" />
+        <link rel="stylesheet" href="./css/variables.css" />
+        <link rel="stylesheet" href="./css/default.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Клуб четырех коней</title>
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="first-view">
+                <div class="first-view__logo">
+                    <img src="./Assets/Logo//logo.png" alt="main-logo" />
+                </div>
+                <div class="first-view__content">
+                    <h1>Превратите уездный город в столицу земного шара</h1>
+                    <h5>
+                        Оплатите взнос на телеграммы для организации
+                        Международного васюкинского турнира по шахматам
+                    </h5>
+                    <div class="first-view__content-buttons golos-text">
+                        <button class="button button-primary">
+                            Подержать шахматную мысль
+                        </button>
+                        <button class="button button-secondary">
+                            Подробнее o турнире
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="first-view__running-text">
+                <div class="running-text">
+                    Дело помощи утопающим — дело рук самих утопающих! • Шахматы
+                    двигают вперед не только культуру, но и экономику! • Лед
+                    тронулся, господа присяжные заседатели! •
+                </div>
+            </div>
+            <div class="item-block__wrapper">
+                <div class="item-block">
+                    <h2 class="block__title">
+                        Чтобы поддержать Международный васюкинский турнир
+                        посетите лекцию на тему:
+                        <br />
+                        <span class="title-red"
+                            >«Плодотворная дебютная идея»</span
+                        >
+                    </h2>
+                    <img
+                        class="lecture-block-image"
+                        src="./Assets/Images/chess_game.png"
+                        alt="chess-game"
+                    />
+                </div>
+                <div class="item-block table-block">
+                    <img
+                        class="table-block-img"
+                        src="./Assets/Images/table-block-img.png"
+                        alt="table-block-img"
+                    />
+                    <div class="table-block__content">
+                        <h2 class="block__title table-block-title">
+                            и Сеанс
+                            <span class="title-red"
+                                >одновременной игры в шахматы на 160
+                                досках</span
+                            >
+                            гроссмейстера O.Бендера
+                        </h2>
+                        <table>
+                            <tr>
+                                <td>Место проведения:</td>
+                                <td>Клуб «Картонажник»</td>
+                            </tr>
+                            <tr>
+                                <td>Дата и время мероприятия:</td>
+                                <td>22 июня 1927 г. в 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Стоимость входных билетов:</td>
+                                <td>20 коп.</td>
+                            </tr>
+                            <tr>
+                                <td>Плата за игру:</td>
+                                <td>50 коп.</td>
+                            </tr>
+                            <tr>
+                                <td>Взнос на телеграммы:</td>
+                                <td>
+                                    <span class="special-style">100 руб.</span>
+                                    21 руб. 16 коп.
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="contact">
+                            По всем вопросам обращаться в администрацию
+                            к К. Михельсону
+                        </p>
+                    </div>
+                </div>
+                <div class="item-block">
+                    <h1 class="title">
+                        Этапы преображения <br />Васюков
+                        <div class="title-blue">
+                            Будущие источники <br />обогащения васюкинцев
+                        </div>
+                    </h1>
+                </div>
+                <div class="item-block grid-block">
+                    <img
+                        src="./Assets/Images/plane.png"
+                        alt="grid-plane"
+                        class="grid-plane"
+                    />
+                    <div class="item-block__grid grid" id="gridContainer"></div>
+                </div>
+
+                <div class="item-block slider-block">
+                    <div class="slider-block__header">
+                        <h2>Участники турнира</h2>
+                        <div class="controls">
+                            <button onclick="prevSlide()">
+                                <i class="arrow left"></i>
+                            </button>
+                            <span id="slideIndex">1</span>
+                            <button onclick="nextSlide()">
+                                <i class="arrow right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slider" id="slidesContainer"></div>
+                </div>
+                <div class="first-view__running-text">
+                    <div class="running-text">
+                        Дело помощи утопающим — дело рук самих утопающих! •
+                        Шахматы двигают вперед не только культуру, но и
+                        экономику! • Лед тронулся, господа присяжные заседатели!
+                        •
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>
+                Все персонажи, события и цитаты являются вымышленными
+                и не принадлежат создателям сайта. С подробностями можно
+                познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова
+                «Двенадцать стульев».
+            </p>
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+</html>
