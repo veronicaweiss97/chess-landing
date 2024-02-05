@@ -27,3 +27,26 @@ tr:last-child td {
 .special-style {
     text-decoration: line-through red;
 }
+
+@media only screen and (max-width: 767px) {
+    table th,
+    table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    table tr {
+        border-bottom: 1px solid var(--main-grey);
+    }
+
+    table td {
+        border-right: none;
+        border-bottom: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    td:last-child {
+        padding: 0 0 15px 0;
+    }
+}

@@ -15,6 +15,10 @@
             href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,600;1,100&family=Ysabeau+Infant:wght@1&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
         <link rel="stylesheet" href="./css/slider.css" />
         <link rel="stylesheet" href="./css/table.css" />
         <link rel="stylesheet" href="./css/variables.css" />
@@ -24,9 +28,10 @@
     </head>
     <body>
         <div class="main-wrapper">
+            <div class="first-view-bg"></div>
             <div class="first-view">
                 <div class="first-view__logo">
-                    <img src="./Assets/Logo//logo.png" alt="main-logo" />
+                    <img src="./Assets/Logo/logo.png" alt="main-logo" />
                 </div>
                 <div class="first-view__content">
                     <h1>Превратите уездный город в столицу земного шара</h1>
@@ -35,12 +40,17 @@
                         Международного васюкинского турнира по шахматам
                     </h5>
                     <div class="first-view__content-buttons golos-text">
-                        <button class="button button-primary">
-                            Подержать шахматную мысль
-                        </button>
-                        <button class="button button-secondary">
-                            Подробнее o турнире
-                        </button>
+                        <a href="#support" class="smooth-scroll-link">
+                            <button class="button button-primary">
+                                Подержать шахматную мысль
+                            </button>
+                        </a>
+
+                        <a href="#moreAboutTour" class="smooth-scroll-link">
+                            <button class="button button-secondary">
+                                Подробнее o турнире
+                            </button></a
+                        >
                     </div>
                 </div>
             </div>
@@ -52,9 +62,14 @@
                 </div>
             </div>
             <div class="item-block__wrapper">
-                <div class="item-block">
+                <div class="item-block support-block" id="support">
                     <h2 class="block__title">
                         Чтобы поддержать Международный васюкинский турнир
+                        <img
+                            class="lecture-block-image-mobile"
+                            src="./Assets/Images/chess_game.png"
+                            alt="chess-game"
+                        />
                         посетите лекцию на тему:
                         <br />
                         <span class="title-red"
@@ -70,10 +85,10 @@
                 <div class="item-block table-block">
                     <img
                         class="table-block-img"
-                        src="./Assets/Images/table-block-img.png"
+                        src="./Assets/Images/chess.png"
                         alt="table-block-img"
                     />
-                    <div class="table-block__content">
+                    <div class="table-block__content" id="moreAboutTour">
                         <h2 class="block__title table-block-title">
                             и Сеанс
                             <span class="title-red"
@@ -117,7 +132,8 @@
                     <h1 class="title">
                         Этапы преображения <br />Васюков
                         <div class="title-blue">
-                            Будущие источники <br />обогащения васюкинцев
+                            Будущие источники
+                            <br class="extra-space" />обогащения васюкинцев
                         </div>
                     </h1>
                 </div>
@@ -128,6 +144,93 @@
                         class="grid-plane"
                     />
                     <div class="item-block__grid grid" id="gridContainer"></div>
+                    <div class="slider-wrapper">
+                        <div class="item-block__grid grid mobile-slider">
+                            <div
+                                class="grid-item mobile-slide"
+                                style="flex-direction: column"
+                            >
+                                <div class="sub-grid">
+                                    <div class="circle">1</div>
+                                    <p class="grid-item-descr">
+                                        Строительство железнодорожной магистрали
+                                        Москва-Васюки
+                                    </p>
+                                </div>
+
+                                <div class="sub-grid">
+                                    <div class="circle">2</div>
+                                    <p class="grid-item-descr">
+                                        Открытие фешенебельной гостиницы
+                                        «Проходная пешка» и&nbsp;других
+                                        небоскрёбов
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="grid-item mobile-slide">
+                                <div class="circle">3</div>
+                                <p class="grid-item-descr">
+                                    Поднятие сельского хозяйства в&nbsp;радиусе
+                                    на&nbsp;тысячу километров: производство
+                                    овощей, фруктов, икры, шоколадных конфет
+                                </p>
+                            </div>
+                            <div
+                                class="grid-item mobile-slide"
+                                style="flex-direction: column"
+                            >
+                                <div class="sub-grid">
+                                    <div class="circle">4</div>
+                                    <p class="grid-item-descr">
+                                        Строительство дворца для&nbsp;турнира
+                                    </p>
+                                </div>
+
+                                <div class="sub-grid">
+                                    <div class="circle">5</div>
+                                    <p class="grid-item-descr">
+                                        Размещение гаражей для&nbsp;гостевого
+                                        автотранспорта
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="grid-item mobile-slide">
+                                <div class="circle">6</div>
+                                <p class="grid-item-descr">
+                                    Постройка сверхмощной радиостанции
+                                    для&nbsp;передачи всему миру сенсационных
+                                    результатов
+                                </p>
+                            </div>
+                            <div class="grid-item mobile-slide">
+                                <div class="circle">7</div>
+                                <p class="grid-item-descr">
+                                    Создание аэропорта «Большие Васюки»
+                                    с&nbsp;регулярным отправлением почтовых
+                                    самолётов и&nbsp;дирижаблей
+                                    во&nbsp;все&nbsp;концы света, включая
+                                    Лос-Анжелос и&nbsp;Мельбурн
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mobile-controls">
+                            <button
+                                class="control-btn prev"
+                                onclick="prevSlideMobile()"
+                            >
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="bullets"></div>
+                            <button
+                                class="control-btn next"
+                                onclick="nextSlideMobile()"
+                            >
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="item-block slider-block">
@@ -144,6 +247,16 @@
                         </div>
                     </div>
                     <div class="slider" id="slidesContainer"></div>
+
+                    <div class="controls controls-mobile">
+                        <button onclick="prevSlide()">
+                            <i class="arrow left"></i>
+                        </button>
+                        <span id="slideIndexMobile">1</span>
+                        <button onclick="nextSlide()">
+                            <i class="arrow right"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="first-view__running-text">
                     <div class="running-text">
@@ -163,6 +276,10 @@
                 «Двенадцать стульев».
             </p>
         </footer>
-        <script src="./index.js"></script>
+        <script src="./js/grid.js"></script>
+        <script src="./js/participantsSlider.js"></script>
+        <script src="./js/planeAnimation.js"></script>
+        <script src="./js/smoothAnchorAnimation.js"></script>
+        <script src="./js/stagesSliderMobile.js"></script>
     </body>
 </html>
